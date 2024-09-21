@@ -3,7 +3,7 @@
 version = 0.1
 
 [default.global.parameters]
-stack_name = "playwright-lambda"
+stack_name = "AsyncChromiumLoader-Lambda"
 
 [default.build.parameters]
 parallel = true

@@ -17,7 +17,7 @@ Resources:
         - x86_64
     Metadata:
       Dockerfile: Dockerfile
-      DockerContext: ./hello_world
+      DockerContext: ./async_chromium_loader
       DockerTag: python3.12-v1
 
 Outputs:
