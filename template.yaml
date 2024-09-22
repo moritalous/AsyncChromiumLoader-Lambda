@@ -7,6 +7,7 @@ Description: >
 Globals:
   Function:
     Timeout: 120
+    MemorySize: 2560
 
 Resources:
   AsyncChromiumLoaderFunction:
@@ -15,6 +16,9 @@ Resources:
       PackageType: Image
       Architectures:
         - x86_64
+      Environment:
+        Variables:
+          PLAYWRIGHT_BROWSERS_PATH: /playwright
     Metadata:
       Dockerfile: Dockerfile
       DockerContext: ./async_chromium_loader

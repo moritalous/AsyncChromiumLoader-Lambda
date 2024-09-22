@@ -9,6 +9,8 @@ FROM python:3.12-slim
 # Include global arg in this stage of the build
 ARG FUNCTION_DIR
 
+ENV PLAYWRIGHT_BROWSERS_PATH=/playwright
+
 # Copy function code
 RUN mkdir -p ${FUNCTION_DIR}
 COPY requirements.txt ${FUNCTION_DIR}
